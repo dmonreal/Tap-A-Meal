@@ -172,14 +172,12 @@ public class Plan1 extends AppCompatActivity {
                 fat1.setText("X");
             }
         });
-
         fat2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 fat2.setText("X");
             }
         });
-
         fat3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
