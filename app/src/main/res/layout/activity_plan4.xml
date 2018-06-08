@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Plan4">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Plan 4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="1800 Calories A Day"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/protein"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Protein" />
+
+                <Button
+                    android:id="@+id/p1"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_red_dark" />
+
+                <Button
+                    android:id="@+id/p2"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_red_dark" />
+
+                <Button
+                    android:id="@+id/p3"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_red_dark" />
+
+                <Button
+                    android:id="@+id/p4"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_red_dark" />
+
+                <Button
+                    android:id="@+id/p5"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_red_dark" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/protein2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Protein" />
+
+                <Button
+                    android:id="@+id/p6"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_red_dark" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Starch" />
+
+                <Button
+                    android:id="@+id/s1"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_orange_dark" />
+
+                <Button
+                    android:id="@+id/s2"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_orange_dark" />
+
+                <Button
+                    android:id="@+id/s3"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="46dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_orange_dark" />
+
+                <Button
+                    android:id="@+id/s4"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_orange_dark" />
+
+                <Button
+                    android:id="@+id/s5"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_orange_dark" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/s6"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_orange_dark" />
+
+                <Button
+                    android:id="@+id/s7"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_orange_dark" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dairy" />
+
+                <Button
+                    android:id="@+id/d1"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_blue_dark" />
+
+                <Button
+                    android:id="@+id/d2"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_blue_dark" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text="Green Veggies" />
+
+                <Button
+                    android:id="@+id/v1"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_green_dark" />
+
+                <Button
+                    android:id="@+id/v2"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_green_dark" />
+
+                <Button
+                    android:id="@+id/v3"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_green_dark" />
+
+                <Button
+                    android:id="@+id/v4"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_green_dark" />
+
+                <Button
+                    android:id="@+id/v5"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_green_dark" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="95dp">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fruit" />
+
+                <Button
+                    android:id="@+id/f1"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_purple" />
+
+                <Button
+                    android:id="@+id/f2"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_purple" />
+
+                <Button
+                    android:id="@+id/f3"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_purple" />
+
+                <Button
+                    android:id="@+id/f4"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_purple" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fats" />
+
+                <Button
+                    android:id="@+id/fat1"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_orange_light" />
+
+                <Button
+                    android:id="@+id/fat2"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_orange_light" />
+
+                <Button
+                    android:id="@+id/fat3"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/holo_orange_light" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Treat" />
+
+                <Button
+                    android:id="@+id/t1"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/black" />
+
+                <Button
+                    android:id="@+id/t2"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/black" />
+
+            </TableRow>
+        </TableLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>
