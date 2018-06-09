@@ -24,7 +24,7 @@ public class proteinPop extends Activity {
         int width = DM.widthPixels;
         int height = DM.heightPixels;
 
-        getWindow().setLayout((int)(width*.75),(int)(height*.75));
+        getWindow().setLayout((int)(width*.75),(int)(height*.50));
 
 
 
@@ -38,6 +38,8 @@ public class proteinPop extends Activity {
     }
 
     public void close(View view) {
+        Intent intent = new Intent(this, info.class);
+        startActivity(intent);
         finish();
     }
 }

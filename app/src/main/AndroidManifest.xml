@@ -28,9 +28,22 @@
         <activity android:name=".Plan5"
             android:theme="@style/tapameal" />
         <activity android:name=".info"
-            android:theme="@style/tapameal"></activity>
+            android:theme="@style/tapameal"/>
         <activity android:name=".proteinPop"
-            android:theme="@style/tapameal"></activity>
+            android:theme="@style/AppTheme.PopupWindow"/>
+        <activity android:name=".dairyPop"
+            android:theme="@style/AppTheme.PopupWindow"/>
+        <activity android:name=".fatPop"
+            android:theme="@style/AppTheme.PopupWindow"/>
+        <activity android:name=".fruitPop"
+            android:theme="@style/AppTheme.PopupWindow"/>
+        <activity android:name=".starchPop"
+            android:theme="@style/AppTheme.PopupWindow"/>
+        <activity android:name=".treatPop"
+            android:theme="@style/AppTheme.PopupWindow"/>
+        <activity android:name=".veggiePop"
+            android:theme="@style/AppTheme.PopupWindow"/>
+
     </application>
 
 </manifest>

@@ -19,4 +19,9 @@
         <item name="android:fontFamily">casual</item>
     </style>
 
+    <style name="AppTheme.PopupWindow">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
 </resources>

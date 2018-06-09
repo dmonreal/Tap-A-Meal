@@ -8,8 +8,7 @@ import android.widget.Button;
 
 public class info extends AppCompatActivity {
 
-    Button proteinPopBtn,fatPopBtn,dairyPopBtn, veggiePopBtn, fruitPopBtn, startchPopBtn,
-            treatPopBtn;
+    Button proteinPopBtn, fatPopBtn, dairyPopBtn, veggiePopBtn, fruitPopBtn, startchPopBtn, treatPopBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,35 +16,65 @@ public class info extends AppCompatActivity {
         setContentView(R.layout.activity_info);
 
         proteinPopBtn = findViewById(R.id.p8);
-        Intent intent = new Intent(this, proteinPop.class);
-        startActivity(intent);
+        proteinPopBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(info.this, proteinPop.class));
+            }
+        });
 
         dairyPopBtn = findViewById(R.id.d);
-        Intent dintent = new Intent(this, proteinPop.class);
-        startActivity(dintent);
+        dairyPopBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(info.this, dairyPop.class));
+            }
+        });
 
         fatPopBtn = findViewById(R.id.fat);
-        Intent fatintent = new Intent(this, proteinPop.class);
-        startActivity(fatintent);
+        fatPopBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(info.this, fatPop.class));
+            }
+        });
+
 
         veggiePopBtn = findViewById(R.id.v);
-        Intent vintent = new Intent(this, proteinPop.class);
-        startActivity(vintent);
+        veggiePopBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(info.this, veggiePop.class));
+            }
+        });
 
         fruitPopBtn = findViewById(R.id.f);
-        Intent fintent = new Intent(this, proteinPop.class);
-        startActivity(fintent);
+        fruitPopBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(info.this, fruitPop.class));
+            }
+        });
 
         startchPopBtn = findViewById(R.id.s9);
-        Intent sintent = new Intent(this, proteinPop.class);
-        startActivity(sintent);
+        startchPopBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(info.this, starchPop.class));
+            }
+        });
 
         treatPopBtn = findViewById(R.id.t);
-        Intent tintent = new Intent(this, proteinPop.class);
-        startActivity(tintent);
+        treatPopBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(info.this, treatPop.class));
+            }
+        });
 
     }
-    public void home(View view){
+
+    public void home(View view) {
         Intent intent = new Intent(this, Home.class);
         startActivity(intent);
     }
