@@ -11,7 +11,6 @@
         android:id="@+id/textView4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="35dp"
         android:layout_marginEnd="64dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="16dp"
@@ -20,7 +19,6 @@
         android:textAlignment="center"
         android:textSize="32sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,25 +26,33 @@
     <TextView
         android:id="@+id/textView6"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="32dp"
-        android:text="Here's how it works: 1. Enter your data below. 2. Tap Start. 3. Tap each block as you eat it!"
+        android:layout_height="91dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="35dp"
+        android:text="Here's how it works:
+        \n1. Enter your data below.
+        \n2. Tap Start.
+        \n3. Tap each block as you eat the food!"
         android:textAlignment="center"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="26dp"
-        android:layout_marginStart="35dp"
-        app:layout_constraintEnd_toStartOf="@+id/radioGroup2"
+        android:layout_width="136dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup2">
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0">
 
         <RadioButton
             android:id="@+id/rbM"
@@ -68,26 +74,39 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="27dp"
-        android:layout_marginEnd="73dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="19dp"
         android:layout_marginStart="35dp"
+        android:paddingStart="6dp"
         android:text="I'm a: "
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginStart="31dp"
+        android:text="I weigh roughly..."
         app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup2" />
 
     <RadioGroup
         android:id="@+id/radioGroup2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="43dp"
-        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="32dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <RadioButton
             android:id="@+id/plan1"
@@ -118,17 +137,6 @@
             android:text="Over 250 lbs" />
     </RadioGroup>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="0dp"
-        android:layout_height="33dp"
-        android:layout_marginEnd="42dp"
-        android:text="I weigh roughly..."
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/button"
         style="@style/Widget.AppCompat.Button.Colored"
@@ -139,7 +147,18 @@
         android:text="Start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="62dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="info"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+        app:srcCompat="@android:drawable/ic_dialog_info" />
 
 </android.support.constraint.ConstraintLayout>

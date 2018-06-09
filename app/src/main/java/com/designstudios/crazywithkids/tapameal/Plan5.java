@@ -1,5 +1,6 @@
 package com.designstudios.crazywithkids.tapameal;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -7,13 +8,12 @@ import android.widget.Button;
 
 public class Plan5 extends AppCompatActivity {
 
-    Button p1, p2, p3, p4, p5, p6, p7, s1, s2, s3, s4, s5, s6,s7, s8, d1, d2, v1, v2, v3, v4, v5,
-            v6, f1, f2, f3, f4, fat1, fat2, fat3, fat4, t1, t2;
+    Button p1, p2, p3, p4, p5, p6, p7, s1, s2, s3, s4, s5, s6, s7, s8, d1, d2, v1, v2, v3, v4, v5, v6, f1, f2, f3, f4, fat1, fat2, fat3, fat4, t1, t2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_plan2);
+        setContentView(R.layout.activity_plan5);
 
         //protein buttons
         p1 = findViewById(R.id.p1);
@@ -287,6 +287,52 @@ public class Plan5 extends AppCompatActivity {
             }
         });
 
+
+    }
+
+    public void info(View view) {
+        Intent intent = new Intent(this, info.class);
+        startActivity(intent);
+    }
+
+    public void home(View view) {
+        Intent intent = new Intent(this, Home.class);
+        startActivity(intent);
+    }
+
+    public void reset(View view) {
+        p1.setText("");
+        p2.setText("");
+        p3.setText("");
+        p4.setText("");
+        p5.setText("");
+        p6.setText("");
+        p7.setText("");
+        s1.setText("");
+        s2.setText("");
+        s3.setText("");
+        s4.setText("");
+        s5.setText("");
+        s6.setText("");
+        s7.setText("");
+        d1.setText("");
+        d2.setText("");
+        v1.setText("");
+        v2.setText("");
+        v3.setText("");
+        v4.setText("");
+        v5.setText("");
+        v6.setText("");
+        f1.setText("");
+        f2.setText("");
+        f3.setText("");
+        f4.setText("");
+        fat1.setText("");
+        fat2.setText("");
+        fat3.setText("");
+        fat4.setText("");
+        t1.setText("");
+        t2.setText("");
 
     }
 }

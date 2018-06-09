@@ -8,7 +8,9 @@ import android.widget.Button;
 
 public class info extends AppCompatActivity {
 
-    Button proteinPopBtn, fatPopBtn, dairyPopBtn, veggiePopBtn, fruitPopBtn, startchPopBtn, treatPopBtn;
+    Button proteinPopBtn, fatPopBtn, dairyPopBtn, veggiePopBtn, fruitPopBtn, startchPopBtn,
+    treatPopBtn;
+    Button goBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,8 +76,13 @@ public class info extends AppCompatActivity {
 
     }
 
+    public void goBack(View view){
+        super.finish();
+
+    }
+
     public void home(View view) {
-        Intent intent = new Intent(this, Home.class);
+        Intent intent = new Intent(info.this, Home.class);
         startActivity(intent);
     }
 }

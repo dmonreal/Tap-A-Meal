@@ -428,4 +428,45 @@
         </TableLayout>
     </android.support.v4.widget.NestedScrollView>
 
+    <ImageButton
+        android:id="@+id/info"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="42dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        android:onClick="info"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="home"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/info"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/imageButton3"
+        app:srcCompat="@drawable/ic_home_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="Reset Button"
+        android:onClick="reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
 </android.support.constraint.ConstraintLayout>
