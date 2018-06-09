@@ -9,19 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Home">
+        <activity android:name=".Home"
+            android:theme="@style/tapameal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Plan1" />
-        <activity android:name=".Plan2" />
-        <activity android:name=".Plan3" />
-        <activity android:name=".Plan4" />
-        <activity android:name=".Plan5" />
-        <activity android:name=".info"></activity>
+        <activity android:name=".Plan1"
+            android:theme="@style/tapameal" />
+        <activity android:name=".Plan2"
+            android:theme="@style/tapameal" />
+        <activity android:name=".Plan3"
+            android:theme="@style/tapameal" />
+        <activity android:name=".Plan4"
+            android:theme="@style/tapameal" />
+        <activity android:name=".Plan5"
+            android:theme="@style/tapameal" />
+        <activity android:name=".info"
+            android:theme="@style/tapameal"></activity>
     </application>
 
 </manifest>

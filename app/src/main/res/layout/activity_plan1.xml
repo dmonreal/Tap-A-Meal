@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Plan1">
+    tools:context=".Plan1"
+    tools:layout_editor_absoluteY="25dp">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="172dp"
         android:layout_marginTop="16dp"
         android:text="Plan 1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/info"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -23,21 +24,20 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
         android:text="1200 Calories A Day"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="403dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2">
 
         <TableRow
             android:layout_width="match_parent"
@@ -55,25 +55,27 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
-                android:background="@android:color/holo_red_dark"
-                />
+                android:background="@android:color/holo_red_dark" />
 
-            <Button style="@style/Widget.AppCompat.Button.Colored"
+            <Button
                 android:id="@+id/p2"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
                 android:background="@android:color/holo_red_dark" />
 
-            <Button style="@style/Widget.AppCompat.Button.Colored"
+            <Button
                 android:id="@+id/p3"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
                 android:background="@android:color/holo_red_dark" />
 
-            <Button style="@style/Widget.AppCompat.Button.Colored"
+            <Button
                 android:id="@+id/p4"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
@@ -91,29 +93,33 @@
                 android:layout_height="wrap_content"
                 android:text="Starch" />
 
-            <Button style="@style/Widget.AppCompat.Button.Colored"
+            <Button
                 android:id="@+id/s1"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
                 android:background="@android:color/holo_orange_dark" />
 
-            <Button style="@style/Widget.AppCompat.Button.Colored"
+            <Button
                 android:id="@+id/s2"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
                 android:background="@android:color/holo_orange_dark" />
 
-            <Button style="@style/Widget.AppCompat.Button.Colored"
+            <Button
                 android:id="@+id/s3"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="46dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
                 android:background="@android:color/holo_orange_dark" />
 
-            <Button style="@style/Widget.AppCompat.Button.Colored"
+            <Button
                 android:id="@+id/s4"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
@@ -131,15 +137,17 @@
                 android:layout_height="wrap_content"
                 android:text="Dairy" />
 
-            <Button style="@style/Widget.AppCompat.Button.Colored"
+            <Button
                 android:id="@+id/d1"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
                 android:background="@android:color/holo_blue_dark" />
 
-            <Button style="@style/Widget.AppCompat.Button.Colored"
+            <Button
                 android:id="@+id/d2"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
@@ -158,22 +166,25 @@
                 android:paddingRight="5dp"
                 android:text="Green Veggies" />
 
-            <Button style="@style/Widget.AppCompat.Button.Colored"
+            <Button
                 android:id="@+id/v1"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
                 android:background="@android:color/holo_green_dark" />
 
-            <Button style="@style/Widget.AppCompat.Button.Colored"
+            <Button
                 android:id="@+id/v2"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
                 android:background="@android:color/holo_green_dark" />
 
-            <Button style="@style/Widget.AppCompat.Button.Colored"
+            <Button
                 android:id="@+id/v3"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
@@ -191,22 +202,25 @@
                 android:layout_height="wrap_content"
                 android:text="Fruit" />
 
-            <Button style="@style/Widget.AppCompat.Button.Colored"
+            <Button
                 android:id="@+id/f1"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
                 android:background="@android:color/holo_purple" />
 
-            <Button style="@style/Widget.AppCompat.Button.Colored"
+            <Button
                 android:id="@+id/f2"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
                 android:background="@android:color/holo_purple" />
 
-            <Button style="@style/Widget.AppCompat.Button.Colored"
+            <Button
                 android:id="@+id/f3"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
@@ -224,22 +238,25 @@
                 android:layout_height="wrap_content"
                 android:text="Fats" />
 
-            <Button style="@style/Widget.AppCompat.Button.Colored"
+            <Button
                 android:id="@+id/fat1"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
                 android:background="@android:color/holo_orange_light" />
 
-            <Button style="@style/Widget.AppCompat.Button.Colored"
+            <Button
                 android:id="@+id/fat2"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
                 android:background="@android:color/holo_orange_light" />
 
-            <Button style="@style/Widget.AppCompat.Button.Colored"
+            <Button
                 android:id="@+id/fat3"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
@@ -257,13 +274,13 @@
                 android:layout_height="wrap_content"
                 android:text="Treat" />
 
-            <Button style="@style/Widget.AppCompat.Button.Colored"
+            <Button
                 android:id="@+id/t1"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="2dp"
-                android:background="@android:color/black"
-                />
+                android:background="@android:color/black" />
 
         </TableRow>
     </TableLayout>
@@ -271,41 +288,53 @@
     <ImageButton
         android:id="@+id/info"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="27dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="42dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
         android:onClick="info"
-        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_dialog_info" />
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/ic_home_black_24dp"
-        tools:layout_editor_absoluteX="295dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/info"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/imageButton3"
+        app:srcCompat="@drawable/ic_home_black_24dp" />
 
     <ImageButton
-        style="@style/Widget.AppCompat.Button.Colored"
         android:id="@+id/imageButton3"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="20dp"
         android:onClick="reset"
-        app:srcCompat="@android:drawable/ic_menu_revert"
-        tools:layout_editor_absoluteX="310dp"
-        tools:layout_editor_absoluteY="497dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="69dp"
-        android:layout_height="63dp"
-        app:srcCompat="@drawable/cwklogo"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="502dp" />
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="231dp"
+        android:layout_marginStart="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton3"
+        app:srcCompat="@drawable/cwklogo" />
 
 </android.support.constraint.ConstraintLayout>
