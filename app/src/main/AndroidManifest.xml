@@ -29,6 +29,8 @@
             android:theme="@style/tapameal" />
         <activity android:name=".info"
             android:theme="@style/tapameal"></activity>
+        <activity android:name=".proteinPop"
+            android:theme="@style/tapameal"></activity>
     </application>
 
 </manifest>

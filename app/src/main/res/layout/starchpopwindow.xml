@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starch/Carbs"
+                tools:layout_editor_absoluteX="139dp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="340dp"
+                android:layout_height="256dp"
+                android:layout_marginBottom="20dp"
+                android:padding="3dp"
+                android:text='1 slice of bread 2 slices low calorie/diet bread 2 breadsticks 1/2 of a 6 inch pita 6" corn tortilla or 7" flour tortilla 3 tablespoons dried breadcrumbs 1/2 cup pasta 1/3 cup rice (white or brown) 1/2 cup of hot cereal 1/2 hot dog or burger roll 1/4 cup baked beans 1/2 cup beans and peas (kidney, garbanzo) 1/3 cup refried beans 1/4 cup hummus'
+                app:layout_constraintBottom_toTopOf="@+id/textView11"
+                app:layout_constraintEnd_toEndOf="@+id/textView11"
+                app:layout_constraintStart_toStartOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="346dp"
+                android:layout_height="62dp"
+
+                android:layout_marginBottom="20dp"
+                android:padding="3dp"
+                android:text="Calories: 80 Carbs.: 15 grams  Protein: 3 grams  Fat: trace  (1 starch block)"
+                app:layout_constraintBottom_toTopOf="@+id/textView13"
+                app:layout_constraintEnd_toEndOf="@+id/textView13"
+                app:layout_constraintStart_toStartOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="335dp"
+                android:layout_height="88dp"
+                android:padding="3dp"
+                android:text="Calories: 144 Carbs.: 15 grams  Protein: 3 grams  Fat: 8 grams  (1 starch + 2 fat blocks)"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="498dp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="337dp"
+                android:layout_height="92dp"
+                android:layout_marginBottom="20dp"
+                android:padding="3dp"
+                android:text="Calories: 120 Carbs.: 15 grams  Protein: 3 grams  Fat: 5 grams  (1 starch + 1 fat block) "
+                app:layout_constraintBottom_toTopOf="@+id/textView12"
+                app:layout_constraintEnd_toEndOf="@+id/textView12"
+                app:layout_constraintStart_toStartOf="@+id/textView12" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="close"
+                android:text="Close"
+                app:layout_constraintTop_toBottomOf="@+id/textView12"
+                tools:layout_editor_absoluteX="270dp" />
+
+            <TextView
+                android:id="@+id/source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="source"
+                android:text="*source"
+                app:layout_constraintBottom_toBottomOf="@+id/button2"
+                app:layout_constraintTop_toTopOf="@+id/button2"
+                tools:layout_editor_absoluteX="29dp" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
