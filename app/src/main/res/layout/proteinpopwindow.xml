@@ -24,11 +24,12 @@
                 android:id="@+id/textView10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Protein"
+                android:layout_marginBottom="5dp"
+                android:text="@string/protein"
+                app:layout_constraintBottom_toTopOf="@+id/textView14"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="16dp" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/textView14"
@@ -38,7 +39,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="52dp"
                 android:padding="3dp"
-                android:text="One serving of Protein is one ounce of meat or fish, 2 ounces of most shellfish. A usual serving is 3 to 4 ounces, so be sure to close that many windows. Don't cheat yourself - the weight is after cooking, not before.  "
+                android:text="@string/prop1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -52,7 +53,7 @@
 
                 android:layout_marginTop="8dp"
                 android:padding="3dp"
-                android:text="Medium Protein  Calories: 75  Carbs.: 0 grams  Protein: 7 grams  Fat: 5 grams  (1 protein block)"
+                android:text="@string/prop2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView14" />
@@ -65,7 +66,7 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="8dp"
                 android:padding="3dp"
-                android:text="High-Fat Protein Calories: 100  Carbs.: 0 grams  Protein: 7 grams  Fat: 8 grams  (1 protein + 1 fat block)  "
+                android:text="@string/prop4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView13" />
@@ -78,7 +79,7 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="8dp"
                 android:padding="3dp"
-                android:text="Very High-Fat Protein Calories: 136  Carbs.: 0 grams  Protein: 7 grams  Fat: 12 grams  (1 protein + 2 fat block)  "
+                android:text="@string/prop5"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView11" />
@@ -89,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:onClick="source"
-                android:text="*source"
+                android:text="@string/source"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"

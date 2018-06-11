@@ -24,11 +24,12 @@
                 android:id="@+id/textView10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Treats"
+                android:layout_marginBottom="5dp"
+                android:text="@string/treat"
+                app:layout_constraintBottom_toTopOf="@+id/textView14"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="16dp" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/textView14"
@@ -38,7 +39,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="52dp"
                 android:padding="3dp"
-                android:text="Extras are used for some very low calorie snacks, or to account for a few extra calories when your foods don't quite add up to one full window in any particular category."
+                android:text="@string/t1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -52,7 +53,7 @@
 
                 android:layout_marginTop="8dp"
                 android:padding="3dp"
-                android:text="Calories: 30 or less Carbs.: varies  Protein: varies  Fat: varies  (1 treat block)"
+                android:text="@string/t2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView14" />
@@ -63,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:onClick="source"
-                android:text="*source"
+                android:text="@string/source"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"

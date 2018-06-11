@@ -15,7 +15,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-smallcaps"
-        android:text="Welcome to Tap-a-Meal!"
+        android:text="@string/welcome_to_tap_a_meal"
         android:textAlignment="center"
         android:textSize="32sp"
         android:textStyle="bold"
@@ -29,10 +29,7 @@
         android:layout_height="91dp"
         android:layout_marginBottom="30dp"
         android:layout_marginTop="35dp"
-        android:text="Here's how it works:
-        \n1. Enter your data below.
-        \n2. Tap Start.
-        \n3. Tap each block as you eat the food!"
+        android:text="@string/here_s_how_it_works_n1_enter_your_data_below_n2_tap_start_n3_tap_each_block_as_you_eat_the_food"
         android:textAlignment="center"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
@@ -59,7 +56,7 @@
             android:layout_width="76dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Male"
+            android:text="@string/male"
             tools:text="Male" />
 
         <RadioButton
@@ -67,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Female"
+            android:text="@string/female"
             tools:text="Female" />
     </RadioGroup>
 
@@ -77,8 +74,9 @@
         android:layout_height="0dp"
         android:layout_marginEnd="19dp"
         android:layout_marginStart="35dp"
+        android:paddingEnd="6dp"
         android:paddingStart="6dp"
-        android:text="I'm a: "
+        android:text="@string/i_m_a"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="@+id/radioGroup"
         app:layout_constraintHorizontal_bias="0.0"
@@ -93,7 +91,7 @@
         android:layout_marginBottom="4dp"
         android:layout_marginEnd="43dp"
         android:layout_marginStart="31dp"
-        android:text="I weigh roughly..."
+        android:text="@string/i_weigh_roughly"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintHorizontal_bias="0.0"
@@ -113,28 +111,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Less than 150 lbs" />
+            android:text="@string/less_than_150_lbs" />
 
         <RadioButton
             android:id="@+id/plan2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="150 - 200 lbs" />
+            android:text="@string/_150_200_lbs" />
 
         <RadioButton
             android:id="@+id/plan3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="201 - 250 lbs" />
+            android:text="@string/_201_250_lbs" />
 
         <RadioButton
             android:id="@+id/plan4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Over 250 lbs" />
+            android:text="@string/over_250_lbs" />
     </RadioGroup>
 
     <Button
@@ -144,7 +142,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="18dp"
         android:onClick="selection"
-        android:text="Start"
+        android:text="@string/start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -156,6 +154,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginStart="62dp"
         android:background="@color/colorPrimaryDark"
+        android:contentDescription="@string/info_button"
         android:onClick="info"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -8,8 +8,12 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -20,11 +24,12 @@
                 android:id="@+id/textView10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fruit"
+                android:layout_marginTop="16dp"
+                android:text="@string/fruit"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="16dp" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView14"
@@ -33,7 +38,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:padding="3dp"
-                android:text="Usual serving size: 1 small fruit (apple, plum, pear, etc.) 2 tablespoons dried fruit (raisins) 4 ounces unsweetened fruit juice 1/2 cup pureed or chopped fruit (applesauce) "
+                android:text="@string/usual_serving_size_1_small_fruit_apple_plum_pear_etc_2_tablespoons_dried_fruit_raisins_4_ounces_unsweetened_fruit_juice_1_2_fruitp1"
                 app:layout_constraintEnd_toEndOf="@+id/textView11"
                 app:layout_constraintStart_toStartOf="@+id/textView11"
                 app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -43,11 +48,12 @@
                 android:layout_width="0dp"
                 android:layout_height="88dp"
 
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="33dp"
                 android:padding="3dp"
-                android:text="Calories: 60 Carbs.: 15 grams  Protein: 0 grams  Fat: 0 grams  (1 fruit window)"
-                app:layout_constraintTop_toBottomOf="@+id/textView14"
-                tools:layout_editor_absoluteX="25dp" />
+                android:text="@string/fruitp2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
             <TextView
                 android:id="@+id/source"
@@ -55,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:onClick="source"
-                android:text="*source"
+                android:text="@string/source"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
