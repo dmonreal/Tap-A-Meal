@@ -38,7 +38,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:padding="3dp"
-                android:text="@string/usual_serving_size_1_small_fruit_apple_plum_pear_etc_2_tablespoons_dried_fruit_raisins_4_ounces_unsweetened_fruit_juice_1_2_fruitp1"
+                android:text="@string/fruitp1"
                 app:layout_constraintEnd_toEndOf="@+id/textView11"
                 app:layout_constraintStart_toStartOf="@+id/textView11"
                 app:layout_constraintTop_toBottomOf="@+id/textView10" />

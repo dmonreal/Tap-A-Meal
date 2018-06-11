@@ -201,7 +201,7 @@
 
                 <TextView
                     android:id="@+id/textView17"
-                    android:layout_width="61dp"
+                    android:layout_width="72dp"
                     android:layout_height="wrap_content"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
